@@ -1,4 +1,7 @@
 #!/bin/sh
 
+echo 1 > /sys/class/graphics/fb0/blank
+echo 0 > /sys/class/graphics/fb0/blank
 touch /tmp/.yamuisplash.done
+sleep 2
 exec yamui --imagesdir=/usr/share/yamuisplash sailfish_logo_rgb
